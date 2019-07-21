@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion config.targetSdkVersion
+    defaultConfig {
+        applicationId "com.albrizy.mobileads"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+}
+
+android.defaultConfig {
+    resValue('string', 'ad_id', 'AKfycbyWYphCuaB5BAo7AkoIBzzeD9hqojoQRGgq3tJcxXles1AoDAc')
+    resValue('string', 'ad_url', '1Ze0tz_dBWhbs-bxW2tNg2_oxjGss-RhF')
+}
+
+android {
+    defaultConfig {
+        flavorDimensions 'default'
+    }
+    productFlavors {
+        local{}
+        remote{}
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: '../libs', include: ['*.jar'])
+    implementation config.appcompat
+    implementation config.okhttp
+    implementation config.gson
+
+    implementation project(':core')
+
+    localImplementation project(':local')
+    localImplementation project(':unity')
+    localImplementation (name:'unity', ext:'aar')
+
+    remoteImplementation project(':remote')
+    remoteImplementation project(':startapp')
+    remoteImplementation config.startapp
+}

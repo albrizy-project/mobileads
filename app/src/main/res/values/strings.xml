@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">MobileAds</string>
+
+    <string name="unity_id">3197433</string>
+    <string name="unity_banners">banner</string>
+    <string name="unity_interstitials">interstitial</string>
+
+</resources>

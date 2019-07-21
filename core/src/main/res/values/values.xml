@@ -1,0 +1,20 @@
+<resources>
+
+    <dimen name="bannerHeight">50dp</dimen>
+
+    <string name="ad_id"/>
+    <string name="ad_url"/>
+
+    <integer name="ad_cache_duration">21600</integer>
+    <integer name="ad_hide_duration">15</integer>
+    <integer name="ad_interstitial_show_after_clicks">4</integer>
+
+    <string name="startapp_id"/>
+    <string name="unity_id"/>
+    <string name="unity_banners"/>
+    <string name="unity_interstitials"/>
+    <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banners">ca-app-pub-3940256099942544/6300978111,ca-app-pub-3940256099942544/6300978111,ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitials">ca-app-pub-3940256099942544/1033173712,ca-app-pub-3940256099942544/1033173712,ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>
