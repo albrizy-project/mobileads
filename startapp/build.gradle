@@ -26,5 +26,5 @@ android {
 dependencies {
     implementation config.appcompat
     implementation config.startapp
-    compileOnly project(':core')
+    implementation project(':core')
 }

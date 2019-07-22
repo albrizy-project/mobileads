@@ -26,6 +26,6 @@ android {
 dependencies {
     implementation fileTree(dir: '../libs', include: ['*.jar'])
     implementation config.appcompat
-    compileOnly project(':core')
+    implementation project(':core')
     compileOnly (name:'unity', ext:'aar')
 }
