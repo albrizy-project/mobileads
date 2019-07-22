@@ -26,5 +26,5 @@ android {
 dependencies {
     implementation config.appcompat
     implementation config.admob
-    implementation project(':core')
+    compileOnly project(':core')
 }

@@ -27,5 +27,5 @@ dependencies {
     implementation config.appcompat
     implementation config.okhttp
     implementation config.gson
-    implementation project(':core')
+    compileOnly project(':core')
 }
